@@ -1,12 +1,16 @@
 import { Outlet } from "react-router";
-import Header from "./components/header";
+
 import './index.css'
+import { Footer, Header } from "./components";
+import { GetInTouch } from "../common_components";
 
 const IndexPage = () => {
     return (
         <div className="global_container">
             <Header />
             <Outlet />
+            <GetInTouch />
+            <Footer />
         </div>
     )
 }

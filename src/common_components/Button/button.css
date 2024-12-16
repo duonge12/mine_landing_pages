@@ -1,0 +1,7 @@
+.common-button{
+    padding: 16px 24px;
+    border: 1px solid whitesmoke;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
