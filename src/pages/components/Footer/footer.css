@@ -1,71 +1,160 @@
-.footer-container-0 {
-    width: 1000px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
-    justify-content: space-between;
+*{
+    font-family: Inter Tight, sans-serif !important;
+    font-style: normal;
+}
+.footer-container{
     background-color: black;
 }
-
-.footer-container-0> :nth-child(1) {
-    display: flex;
-    gap: 20px;
-}
-
-.footer-container-0> :nth-child(2) {
-    display: flex;
-    gap: 10px;
-}
-
-.footer-container-0> :nth-child(3) {
-    display: flex;
-    justify-content: space-around;
-}
-
-
-
-.footer-body>:nth-child(1) {
+.footer-container-0{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    padding: 0px 24px;
+    gap:24px;
 }
-
-.footer-body>:nth-child(2) {
-    display: flex;
-    width: 100%;
-}
-
-.footer-body>:nth-child(2)>div {
-    flex: 1;
+.footer-container-1{
     display: flex;
     flex-direction: column;
-    gap: 10px;
+    gap:32px;
+}
+.footer-container-2{
+    display: flex;
+    flex-direction: column;
+    gap:4px;
+}
+.footer-logo-container{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+}
+.footer-navigate-container{
+    display: flex;
+    flex-direction: column;
+    gap:24px
 }
 
-.footer-container-0 * {
-    color: white;
+.footer-navigate-item-container{
+    display: flex;
+    flex-direction: column;
+    width: 272px;
+}
+.footer-navigate-header{
+    color: whitesmoke;
+
+    font-size: 20px;
+    line-height: 140%;
+    font-weight: 600;
+}
+.footer-navigate-text{
+    color: whitesmoke;
+    padding-top: 6px;
+    padding-bottom: 6px;
+
+    font-weight: 520;
+    font-size: 16px ;
+    line-height: 150% ;
+}
+#footer-brand-image{
+    height: 100px;
+    width: 300px;
+    background-image:url('https://d2820gpw82hiks.cloudfront.net/assets/images/logo.webp');
+    background-size: 108.219% 100.364%;
+    background-position: -24px -.182px;
+}
+.footer-text{
+    color: whitesmoke;
+
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 400;
+    font-family: Inter Tight, sans-serif;
+    font-style: normal;
+}
+.footer-buttons-container{
+    display: flex;
+    gap:16px;
+}
+.footer-button{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px;
     background-color: black;
-    text-decoration: none;
-}
+    color: whitesmoke;
+    border: 1px solid whitesmoke;
 
-.button-container-0 {
-    display: flex;
-    gap: 10px;
-}
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 500;
 
-.footer-navigate-content-underline {
-    width: 0%;
-    height: 3px;
-    transition: width 1s;
-    background-color: whitesmoke;
 }
+.footer-message{
+    text-align: center;
+    white-space: nowrap;
+    margin-top: 20px;
 
-.footer-navigate-content:hover~.footer-navigate-content-underline {
-    width: 100%;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 400;
+    color:whitesmoke;
 }
+.footer-rule{
+    color: whitesmoke;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+}
+@media screen and (min-width:425px) and (max-width:1024px) {
+    .footer-container-0{
+        max-width: 800px;
+        margin: 0px auto;
+    }
+    .footer-navigate-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:24px
+    }
+    .footer-navigate-item-container{
+        width: 316px;
+    }
+    .footer-container-2{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        margin: 0px auto;
+    }
 
-.footer-navigate-list>h2,
-span {
-    width: fit-content;
+}
+@media screen and (min-width:1024px) {
+    .footer-container-0{
+        max-width: 1024px;
+        margin: 0px auto;
+    }
+    .footer-container-1{
+        flex-direction: row;
+        gap:32px;
+    }
+    .footer-text{
+        color: whitesmoke;
+    
+        font-size: 20px;
+        line-height: 150%;
+        font-weight: 500;
+    }
+    .footer-navigate-container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap:24px
+    }
+    .footer-navigate-item-container{
+        width: 220px;
+    }
+    .footer-container-2{
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        align-items: start;
+    }
+
 }

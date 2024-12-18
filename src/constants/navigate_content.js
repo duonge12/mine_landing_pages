@@ -119,4 +119,3 @@ export const footerLinks = [
 
 ];
 
-export const logoScr = "https://s3-alpha-sig.figma.com/img/a062/7c09/4ff204c4e4be0d77e444f29297b0b790?Expires=1734307200&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ZenZCxiVtBbXYOx7-fBCJ~8wcTBIkrLagBzqklcMaQ~ZPqhEcyhncnvsa9ws8j5d5Zcc6DxDLv1znnDjXI1IgU7BLXf5l6lAk-KJCnJ~8Lu4oSYRrYdSsg5zWzYA1XHv-lmgyHCUSEc4O1WpvNhGRscHnE1suD4ay9AFA617~PA3Qc5RYgHfAj9r61cPW-f5tAbOyWQJ7UrchO4IShq5f7XYpiHQ7jXpNDkoKp6kwuyAhVop~pM5~QdGfBq~~B~-uU2zfqNLQvpkl9PGBtXXcO6WJiDPFIJMx5DTWJZr24PHB5rtFALqTYQzkojmqO6l2AKF8gIPGxtLRFUYiQJ9FQ__"

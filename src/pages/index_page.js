@@ -8,9 +8,9 @@ const IndexPage = () => {
     return (
         <div className="global_container-0">
             <Header />
-            <Outlet />
-            {/* <GetInTouch />
-            <Footer /> */}
+            {/* <Outlet />
+            <GetInTouch /> */}
+            <Footer />
         </div>
     )
 }

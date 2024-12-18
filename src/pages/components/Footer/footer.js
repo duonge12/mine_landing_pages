@@ -1,61 +1,45 @@
-import { Link } from 'react-router'
+import { Facebook, Linkedin } from 'lucide-react';
 import './footer.css'
-import { footerLinks, logoScr } from '../../../constants/navigate_content';
-import { FBIcon, LinkedinIcon } from '../../../icons';
-import { Button } from '../../../common_components';
-
-
-const Footer = () => {
-    const navigate_content = footerLinks.map((item, index) =>
-        <div
-            key={index}
-            className='footer-navigate-list'
-        >
-            <h2 children={item.text} />
-            {item.child && item.child.map((child, childIndex) =>
-                <span>
-                    <Link
-                        key={childIndex}
-                        className='footer-navigate-content'
-                        children={child.text}
-                        to={child.path}
-                    />
-                    <div className='footer-navigate-content-underline' />
-                </span>
+import { footerLinks } from '../../../constants/navigate_content';
+const Footer=()=>{
+    const footerNav=footerLinks.map((item,index)=> 
+        <div className='footer-navigate-item-container'>
+            <h2 className='footer-navigate-header' children={item.text}/>
+            {item.child && item.child.map((child, childIndex)=>
+                <p className='footer-navigate-text' children={child.text}/>
             )}
         </div>
-
-    );
-
-
-    return (
-        <div className="footer-container-0">
-            <div className='footer-body'>
-                <div>
-                    <Link children={<img className="header-brand" src={logoScr} />} />
-                    <span children="Email us" />
-                    <span children="info@digiex.asia" />
-                    <div className='button-container-0'>
-                        <Button className="common-button">
-                            <FBIcon />
-                            <span>Facebook</span>
-                        </Button>
-                        <Button className="common-button">
-                            <LinkedinIcon />
-                            <span>Linkedin</span>
-                        </Button>
+    )
+    return(
+        <footer className="footer-container">
+            <div className="footer-container-0">
+                <div className="footer-container-1">
+                    <div className="footer-logo-container">
+                        <div id="footer-brand-image"/>
+                        <p className='footer-text' children={'Email us'}/>
+                        <p class="footer-text" children={'info@digiex.asia'}/>
+                        <div className='footer-buttons-container'>
+                            <button className='footer-button'>
+                                <Facebook/>
+                                Facebook
+                            </button>
+                            <button className='footer-button'>
+                                <Linkedin/>
+                                Linkedin
+                            </button>
+                        </div>
+                        
                     </div>
+                    <div className='footer-navigate-container' children={footerNav}/>
+                </div> 
+                <div className='footer-container-2'>
+                    <p className='footer-rule' children={"Privacy Policy"}/>
+                    <p className='footer-rule' children={"Terms of Use"}/>
+                    <p className='footer-rule' children={"Cookie Policy"}/>
                 </div>
-                <div children={navigate_content} />
             </div>
-            <div>
-                <span children="Privacy Policy" />
-                <span children="Terms of Use" />
-                <span children="Cookie Policy" />
-            </div>
-            <div children="© 2024 Digiex. All rights reserved." />
-        </div>
-
+            <p className='footer-message' children={"© 2024 DigiEx Group. All rights reserved."}/>
+        </footer>
     )
 }
-export default Footer
+export default Footer;
