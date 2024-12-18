@@ -5,17 +5,8 @@ import { path } from "./constants/router_path";
 
 const router = createBrowserRouter([
     {
-        path: path.home,
+        path: path.index,
         element: <IndexPage />,
-        children: [
-            {
-                path: path.index,
-                element: <></>,
-                children: [
-
-                ]
-            }
-        ],
         errorElement: <NotFoundPage />,
     }
 ])

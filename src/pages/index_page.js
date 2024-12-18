@@ -6,11 +6,11 @@ import { GetInTouch } from "../common_components";
 
 const IndexPage = () => {
     return (
-        <div className="global_container">
+        <div className="global_container-0">
             <Header />
             <Outlet />
-            <GetInTouch />
-            <Footer />
+            {/* <GetInTouch />
+            <Footer /> */}
         </div>
     )
 }

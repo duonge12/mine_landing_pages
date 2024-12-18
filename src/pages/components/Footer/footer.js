@@ -29,13 +29,13 @@ const Footer = () => {
 
 
     return (
-        <div className="footer-container">
+        <div className="footer-container-0">
             <div className='footer-body'>
                 <div>
                     <Link children={<img className="header-brand" src={logoScr} />} />
                     <span children="Email us" />
                     <span children="info@digiex.asia" />
-                    <div className='button-container'>
+                    <div className='button-container-0'>
                         <Button className="common-button">
                             <FBIcon />
                             <span>Facebook</span>
