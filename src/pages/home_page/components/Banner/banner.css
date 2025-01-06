@@ -1,0 +1,78 @@
+*{
+    font-family: Inter Tight, sans-serif !important;
+    font-style: normal;
+}
+.home-page-banner-container{
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0.00) 0%, #141414 100%), url(https://d2820gpw82hiks.cloudfront.net/assets/images/home/banner-home.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 800px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.home-page-banner-header{
+    color: whitesmoke;
+    font-size: 40px;
+    line-height: 120%;
+    font-weight: 500;
+}
+.home-page-banner-text-container{
+    display: flex;
+    flex-direction: column;
+    gap:16px;
+    padding: 0px 24px;
+}
+.home-page-banner-text{
+    white-space: wrap;
+    color: whitesmoke;
+    font-size: 15px;
+    line-height: 150%;
+    font-weight: 550;
+}
+.home-page-banner-button{
+    background-color: rgb(79 52 255 / 1);
+    padding: 18px 36px;
+    color: whitesmoke;
+    border: none;
+    font-size: 15px;
+    line-height: 150%;
+    font-weight: 550;
+    width: 160px;
+}
+
+@media screen and (min-width:768px){
+    .home-page-banner-header{
+        color: whitesmoke;
+        font-size: 56px;
+        line-height: 120%;
+        font-weight: 500;
+    }
+    .home-page-banner-text{
+        display: block;
+        max-width: 80%;
+        white-space: wrap;
+        color: whitesmoke;
+        font-size: 18px;
+        line-height: 150%;
+        font-weight: 500;
+    }
+    .home-page-banner-text-container{
+        max-width: 768px;
+    }
+}
+@media screen and (min-width:1200px){
+    .home-page-banner-header{
+        color: whitesmoke;
+        font-size: 72px;
+        line-height: 120%;
+        font-weight: 500;
+    }
+    .home-page-banner-text-container{
+        max-width: 1200px;
+    }
+}

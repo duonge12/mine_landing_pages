@@ -95,9 +95,9 @@
     font-weight: 500;
     font-size: 18px;
 }
-@media screen and (min-width:425px) and (max-width: 1024px){
+@media screen and (min-width:768px){
     #main-header >.container-0{
-       max-width: 640px;
+       max-width: 768px;
     }
     #dropdown-menu > div:last-child{
         display: none;
@@ -119,9 +119,9 @@
     }
 
 }
-@media screen and (min-width:1024px){
+@media screen and (min-width:1200px){
     #main-header >.container-0{
-        max-width: 1024px;
+        max-width: 1200px;
     }
     .header-menu-button{
         display: none;

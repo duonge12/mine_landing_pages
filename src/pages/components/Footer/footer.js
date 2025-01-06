@@ -6,7 +6,7 @@ const Footer=()=>{
         <div className='footer-navigate-item-container'>
             <h2 className='footer-navigate-header' children={item.text}/>
             {item.child && item.child.map((child, childIndex)=>
-                <p className='footer-navigate-text' children={child.text}/>
+                <p key={childIndex} className='footer-navigate-text' children={child.text}/>
             )}
         </div>
     )

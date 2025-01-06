@@ -4,6 +4,7 @@
 }
 .footer-container{
     background-color: black;
+    padding: 40px 0px;
 }
 .footer-container-0{
     display: flex;
@@ -103,9 +104,9 @@
     font-size: 16px;
     line-height: 150%;
 }
-@media screen and (min-width:425px) and (max-width:1024px) {
+@media screen and (min-width:768px) {
     .footer-container-0{
-        max-width: 800px;
+        max-width: 768px;
         margin: 0px auto;
     }
     .footer-navigate-container{
@@ -125,14 +126,15 @@
     }
 
 }
-@media screen and (min-width:1024px) {
+@media screen and (min-width:1200px) {
     .footer-container-0{
-        max-width: 1024px;
+        max-width: 1200px;
         margin: 0px auto;
     }
     .footer-container-1{
         flex-direction: row;
         gap:32px;
+        justify-content: space-between;
     }
     .footer-text{
         color: whitesmoke;

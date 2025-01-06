@@ -28,7 +28,7 @@ const Header=()=>{
                 {item.child && 
                     <div id="header-sub-menu">
                         {item.child.map((itemChild, childIndex)=>
-                            <div className="header-sub-menu-item">
+                            <div key={childIndex} className="header-sub-menu-item">
                                 +<Link to={itemChild.path} children={itemChild.text}
                                 />
                             </div>
