@@ -1,0 +1,49 @@
+.our-client-background{
+    background-color: rgba(20, 20, 20);
+}
+.our-client-container{
+    padding: 56px 24px;
+    position: relative;
+    overflow: hidden !important;
+}
+.left-blur{
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(to right, rgba(20, 20, 20, 1), rgba(20, 20, 20, 1), rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.1));
+    z-index: 2;
+    left: 0;
+    top: 0;
+}
+.right-blur{
+    position: absolute;
+    width: 100px;
+    height: 100%;
+    background: linear-gradient(to left, rgba(20, 20, 20, 1), rgba(20, 20, 20, 1), rgba(20, 20, 20, 0.6), rgba(20, 20, 20, 0.1));
+    z-index: 10;
+    right: 0;
+    top: 0;
+}
+.swiper-slide.client-logo{
+    height: 60px;
+    width: fit-content !important;
+}
+.client-logo > svg{
+    color: whitesmoke;
+    height: 100%;
+}
+@media screen and (min-width:786px){
+    .our-client-container{
+        max-width: 786px;
+        margin: 0 auto;
+    }
+}
+@media screen and (min-width:1200px){
+    .swiper-slide.client-logo{
+        height: 54px;
+    }
+    .our-client-container{
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+}

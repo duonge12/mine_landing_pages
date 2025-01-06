@@ -1,0 +1,134 @@
+.about-container{
+    background-image: url(https://d2820gpw82hiks.cloudfront.net/assets/images/home/bg-about-us.webp);
+    background-position: unset;
+    background-size: cover;
+}
+.about-container-0{
+    padding: 56px 24px;
+}
+.about-text-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.about-header-0{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 32px;
+    line-height: 120%;
+    font-weight: 500;
+}
+.about-paragraph-0{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 500;
+    color: rgb(178 178 178 / 1);
+}
+.about-button{
+    display: inline-block;
+    white-space: nowrap;
+    color: whitesmoke;
+    font-size: 18px;
+    line-height: 150%;
+    font-weight: 500;
+    padding: 20px 40px;
+    background-color: transparent;
+    border: 1px solid whitesmoke;
+}
+.about-header-1{
+    margin-top: 20px;
+    font-size: 24px;
+    line-height: 140%;
+    font-weight: 500;
+    color: whitesmoke;
+    text-align: center;
+}
+.about-statistic-container{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.about-statistic-container > :not(:last-child){
+    border-bottom: 1px solid whitesmoke;
+}
+.about-statistic-cell{
+    padding:20px 0px;
+}
+.about-statistic-number{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 40px;
+    line-height: 120%;
+    font-weight: 500;
+}
+.about-statistic-text{
+    color: whitesmoke;
+    text-align: center;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 500;
+}
+.about-video{
+    width: 100%;
+    height: 180px;
+}
+@media screen and (min-width:768px){
+    .about-container-0{
+        max-width: 768px;
+        margin: 0 auto;
+        padding: 40px 0px;
+    }
+    .about-header-0{
+        color: whitesmoke;
+        text-align: center;
+        font-size: 48px;
+        line-height: 120%;
+        font-weight: 500;
+    }
+    .about-paragraph-0{
+        color: whitesmoke;
+        text-align: center;
+        font-size: 20px;
+        line-height: 150%;
+        font-weight: 500;
+        color: rgb(178 178 178 / 1);
+    }
+    .about-header-1{
+        margin-top: 20px;
+        font-size: 32px;
+        line-height: 140%;
+        font-weight: 500;
+        color: whitesmoke;
+        text-align: center;
+    }
+    .about-statistic-container{
+        flex-direction: row;
+    }
+    .about-statistic-container > :not(:last-child){
+        border-right: 1px solid whitesmoke;
+        border-bottom: none;
+    }
+    .about-statistic-cell{
+        padding:10px 20px;
+    }
+    .about-video{
+        width: 100%;
+        height: 432px;
+    }
+}
+@media screen and (min-width:1200px){
+    .about-video{
+        width: 100%;
+        height: 810px;
+    }
+    .about-container-0{
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 40px 0px;
+    }
+}
